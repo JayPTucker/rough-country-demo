@@ -1,4 +1,5 @@
 import { prisma } from "../lib/prisma";
+import "./globals.css"
 
 // SSG
 export const dynamic = "force-static";
@@ -12,13 +13,29 @@ export default async function Home() {
 
   return (
     <main>
-      <h1>TrailForge Demo</h1>
+      <span className="nav">
+        <p>RC Demo</p>
+        <a className="navBtn" href='/'>
+          Home
+        </a>
+        <a className="navBtn" href="/products">
+          Products
+        </a>
+      </span>
 
-      <h2>SSG Example</h2>
+
+
+      <h1>SSG Example</h1>
 
       <p>
         This page is statically generated at build time.
       </p>
+      <i>
+        - Anything you change in MySQL or in the DB won't update on this page until it is rebuilt
+        from the server.
+      </i>
+
+
 
       <ul>
         {featuredProducts.map((product) => (

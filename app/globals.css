@@ -47,3 +47,34 @@ a {
     color-scheme: dark;
   }
 }
+
+a:hover {
+  color: rgb(202, 0, 0) !important;
+}
+
+li {
+  padding: 10px;
+}
+
+.navBtn {
+  color: red;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 7px 20px;
+}
+
+.navBtn:hover {
+  background-color: rgba(255, 144, 144, 0.205);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
